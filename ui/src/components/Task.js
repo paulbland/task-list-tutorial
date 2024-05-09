@@ -29,8 +29,6 @@ export const Task = ({ task, fetchTasks }) => {
     } catch (err) {
       console.log(err)
     }
-    console.log("Handle delete task");
-
   };
   return (
     <div>
