@@ -14,7 +14,7 @@ export const Task = ({ task, fetchTasks }) => {
   const handleUpdateTaskCompletion = async () => {
     try {
       await axios.put(API_URL, {
-        id, name, complete: !isComplete
+        id, name, completed: !isComplete
       })
       setIsComplete((prev) => !prev);
     } catch (err) {
